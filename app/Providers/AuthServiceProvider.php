@@ -5,6 +5,8 @@ namespace App\Providers;
 use App\User;
 use Illuminate\Support\Facades\Gate;
 use Illuminate\Support\ServiceProvider;
+use Laravel\Passport\Passport;
+use Carbon\Carbon;
 
 class AuthServiceProvider extends ServiceProvider
 {
@@ -25,6 +27,12 @@ class AuthServiceProvider extends ServiceProvider
      */
     public function boot()
     {
+        \Dusterio\LumenPassport\LumenPassport::routes($this->app);
+
+        Passport::tokensExpireIn(Carbon::now()->addDays(15));
+
+        Passport::refreshTokensExpireIn(Carbon::now()->addDays(30));
+
         // Here you may define how you wish users to be authenticated for your Lumen
         // application. The callback which receives the incoming request instance
         // should return either a User instance or null. You're free to obtain
