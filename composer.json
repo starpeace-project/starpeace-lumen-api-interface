@@ -3,6 +3,14 @@
     "description": "The Starpeace Project Interface API",
     "keywords": ["framework", "laravel", "lumen", "starpeace", "legacy-online"],
     "license": "MIT",
+    "authors": [
+        {
+            "name": "Ron Appleton",
+            "email": "ron.appleton@gmail.com",
+            "homepage": "https://www.linkedin.com/in/ron-appleton-b3066318/",
+            "role": "Developer"
+        }
+    ],
     "type": "project",
     "require": {
         "php": ">=7.1.3",
