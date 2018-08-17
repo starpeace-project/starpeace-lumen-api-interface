@@ -1,4 +1,4 @@
-<img src="https://github.com/ronappleton/starpeace-public-documents/blob/master/starpeace-logo.png" width="180px" height="150px"> Starpeace Project Lumen API  [![Build Status](https://travis-ci.org/laravel/lumen-framework.svg)](https://travis-ci.org/laravel/lumen-framework)
+<img src="https://github.com/ronappleton/starpeace-public-documents/blob/master/starpeace-logo.png" width="180px" height="150px"> Starpeace Project Lumen API  [![Build Status](https://travis-ci.org/starpeace-project/starpeace-lumen-api-interface.svg?branch=master)](https://travis-ci.org/starpeace-project/starpeace-lumen-api-interface)
 [![License](https://poser.pugx.org/laravel/lumen-framework/license.svg)](https://packagist.org/packages/laravel/lumen-framework)
 -----------------------------------------------------------------------------------------------------------------
 
