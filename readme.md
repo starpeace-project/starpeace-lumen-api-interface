@@ -1,3 +1,4 @@
+<img src="https://github.com/ronappleton/starpeace-public-documents/blob/master/starpeace-logo.png" width="180px" height="150px">
 # Starpeace Project Lumen API
 
 [![Build Status](https://travis-ci.org/laravel/lumen-framework.svg)](https://travis-ci.org/laravel/lumen-framework)
