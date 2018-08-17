@@ -1,7 +1,7 @@
 {
-    "name": "laravel/lumen",
-    "description": "The Laravel Lumen Framework.",
-    "keywords": ["framework", "laravel", "lumen"],
+    "name": "starpeace-project/starpeace-lumen-api-interface",
+    "description": "The Starpeace Project Interface API",
+    "keywords": ["framework", "laravel", "lumen", "starpeace", "legacy-online"],
     "license": "MIT",
     "type": "project",
     "require": {
