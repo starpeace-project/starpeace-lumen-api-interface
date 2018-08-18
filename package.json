@@ -1,0 +1,29 @@
+{
+  "scripts": {
+    "compile": "projectz compile",
+    "posttest": "npm run compile"
+  },
+  "author": "2018 Ron Appleton <ron.appleton@gmail.com> (http://www.linkedin.com/in/ron-appleton-b3066318/)",
+  "maintainers": [
+    "Ron Appleton (ron.appleton@gmail.com) (https://www.linkedin.com/in/ron-appleton-b3066318/)"
+  ],
+  "contributors": [
+    "Benjamin Lupton (b@lupton.cc) (http://balupton.com)",
+    "Benjamin Lupton (http://balupton.com)",
+    "Rob Loach (http://robloach.net)",
+    "Peter Flannery (https://github.com/pflannery)",
+    "vsopvsop (https://github.com/vsopvsop)",
+    "Shahar Or (https://github.com/mightyiam)",
+    "Zlatan Vasović (http://zdroid.github.io)",
+    "Ron Appleton (https://github.com/ronappleton)"
+  ],
+  "dependencies": {
+    "babel-polyfill": "^6.26.0"
+  },
+  "name": "starpeace-lumen-api-interface",
+  "license": "MIT",
+  "description": "This API acts as the new interface server for the re-build of Starpeace",
+  "bugs": {
+    "url": "https://github.com/starpeace-project/starpeace-lumen-api-interface/issues"
+  }
+}
