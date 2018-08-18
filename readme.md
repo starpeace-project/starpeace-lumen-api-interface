@@ -2,7 +2,7 @@
 -----------------------------------------------------------------------------------------------------------------
 [![Build Status](https://travis-ci.org/starpeace-project/starpeace-lumen-api-interface.svg?branch=master)](https://travis-ci.org/starpeace-project/starpeace-lumen-api-interface)
 [![License](https://poser.pugx.org/laravel/lumen-framework/license.svg)](https://packagist.org/packages/laravel/lumen-framework) [![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/starpeace-project/starpeace-lumen-api-interface/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/starpeace-project/starpeace-lumen-api-interface/) 
-![GitHub release](https://img.shields.io/badge/Release-v0.0.1-brightgreen.svg) 
+![GitHub release](https://img.shields.io/badge/Release-v0.0.1-brightgreen.svg) ![Discourse chat (https://img.shields.io/badge/Discourse-Chat-blue.svg)(https://discord.gg/TF9Bmsj)
 
 
 
