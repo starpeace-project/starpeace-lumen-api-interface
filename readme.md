@@ -1,7 +1,7 @@
-<img src="https://github.com/ronappleton/starpeace-public-documents/blob/master/starpeace-logo.png" width="180px" height="150px"> Starpeace Project Lumen API  [![Build Status](https://travis-ci.org/starpeace-project/starpeace-lumen-api-interface.svg?branch=master)](https://travis-ci.org/starpeace-project/starpeace-lumen-api-interface)
-[![License](https://poser.pugx.org/laravel/lumen-framework/license.svg)](https://packagist.org/packages/laravel/lumen-framework) [![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/starpeace-project/starpeace-lumen-api-interface/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/starpeace-project/starpeace-lumen-api-interface/)
+<img src="https://github.com/ronappleton/starpeace-public-documents/blob/master/starpeace-logo.png" width="180px" height="150px"> Starpeace Project Lumen API  
 -----------------------------------------------------------------------------------------------------------------
-
+[![Build Status](https://travis-ci.org/starpeace-project/starpeace-lumen-api-interface.svg?branch=master)](https://travis-ci.org/starpeace-project/starpeace-lumen-api-interface)
+[![License](https://poser.pugx.org/laravel/lumen-framework/license.svg)](https://packagist.org/packages/laravel/lumen-framework) [![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/starpeace-project/starpeace-lumen-api-interface/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/starpeace-project/starpeace-lumen-api-interface/)
 
 
 
