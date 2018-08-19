@@ -28,6 +28,7 @@ $app->withFacades();
 $app->withEloquent();
 
 $app->configure('auth');
+$app->configure('routes');
 
 /*
 |--------------------------------------------------------------------------
@@ -99,7 +100,11 @@ $app->register(Dusterio\LumenPassport\PassportServiceProvider::class);
 $app->router->group([
     'namespace' => 'App\Http\Controllers',
 ], function ($router) {
-    require __DIR__.'/../routes/web.php';
+    $routesFolder = __DIR__."/../routes/";
+    foreach (config('routes.route_files') as $routeFile) {
+        $path = $routesFolder . $routeFile;
+        require $path;
+    }
 });
 
 return $app;
