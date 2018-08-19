@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "eb09f6484b10009ade241b74877a54bf",
+    "content-hash": "72216ff96e0c43917c7d8216831130ce",
     "packages": [
         {
             "name": "defuse/php-encryption",
@@ -1605,6 +1605,51 @@
             "description": "The Illuminate Queue package.",
             "homepage": "https://laravel.com",
             "time": "2018-07-31T22:03:02+00:00"
+        },
+        {
+            "name": "illuminate/redis",
+            "version": "v5.6.33",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/illuminate/redis.git",
+                "reference": "e6c48d60f05849ca5eccd466879390bfef234970"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/illuminate/redis/zipball/e6c48d60f05849ca5eccd466879390bfef234970",
+                "reference": "e6c48d60f05849ca5eccd466879390bfef234970",
+                "shasum": ""
+            },
+            "require": {
+                "illuminate/contracts": "5.6.*",
+                "illuminate/support": "5.6.*",
+                "php": "^7.1.3",
+                "predis/predis": "~1.0"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "5.6-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Illuminate\\Redis\\": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Taylor Otwell",
+                    "email": "taylor@laravel.com"
+                }
+            ],
+            "description": "The Illuminate Redis package.",
+            "homepage": "https://laravel.com",
+            "time": "2018-07-13T13:28:47+00:00"
         },
         {
             "name": "illuminate/session",
@@ -3266,6 +3311,56 @@
             "time": "2018-08-07T06:44:28+00:00"
         },
         {
+            "name": "predis/predis",
+            "version": "v1.1.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/nrk/predis.git",
+                "reference": "f0210e38881631afeafb56ab43405a92cafd9fd1"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/nrk/predis/zipball/f0210e38881631afeafb56ab43405a92cafd9fd1",
+                "reference": "f0210e38881631afeafb56ab43405a92cafd9fd1",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.9"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "~4.8"
+            },
+            "suggest": {
+                "ext-curl": "Allows access to Webdis when paired with phpiredis",
+                "ext-phpiredis": "Allows faster serialization and deserialization of the Redis protocol"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Predis\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Daniele Alessandri",
+                    "email": "suppakilla@gmail.com",
+                    "homepage": "http://clorophilla.net"
+                }
+            ],
+            "description": "Flexible and feature-complete Redis client for PHP and HHVM",
+            "homepage": "http://github.com/nrk/predis",
+            "keywords": [
+                "nosql",
+                "predis",
+                "redis"
+            ],
+            "time": "2016-06-16T16:22:20+00:00"
+        },
+        {
             "name": "psr/container",
             "version": "1.0.0",
             "source": {
@@ -4028,12 +4123,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/starpeace-project/starpeace-eloquent-models.git",
-                "reference": "b7f5d823331cea1d3ca4b02b7083e280f45ed301"
+                "reference": "490872da89d17c264083a8706e114d20ab355eb3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/starpeace-project/starpeace-eloquent-models/zipball/b7f5d823331cea1d3ca4b02b7083e280f45ed301",
-                "reference": "b7f5d823331cea1d3ca4b02b7083e280f45ed301",
+                "url": "https://api.github.com/repos/starpeace-project/starpeace-eloquent-models/zipball/490872da89d17c264083a8706e114d20ab355eb3",
+                "reference": "490872da89d17c264083a8706e114d20ab355eb3",
                 "shasum": ""
             },
             "require": {
@@ -4069,7 +4164,7 @@
                 "models",
                 "starpeace"
             ],
-            "time": "2018-08-19T18:34:31+00:00"
+            "time": "2018-08-19T23:25:07+00:00"
         },
         {
             "name": "symfony/console",

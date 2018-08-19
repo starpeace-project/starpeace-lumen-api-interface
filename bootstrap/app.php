@@ -29,6 +29,7 @@ $app->withEloquent();
 
 $app->configure('auth');
 $app->configure('routes');
+$app->configure('cache');
 
 /*
 |--------------------------------------------------------------------------
@@ -70,6 +71,7 @@ $app->routeMiddleware([
 // Finally register two service providers - original one and Lumen adapter
 $app->register(Laravel\Passport\PassportServiceProvider::class);
 $app->register(Dusterio\LumenPassport\PassportServiceProvider::class);
+$app->register(Illuminate\Redis\RedisServiceProvider::class);
 
 /*
 |--------------------------------------------------------------------------
