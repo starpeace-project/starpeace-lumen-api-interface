@@ -63,13 +63,19 @@ DELETE | /oauth/personal-access-tokens/{token_id} |            | \Laravel\Passpo
 
 <h2>Backers</h2>
 
-<ul><li><a href="https://www.linkedin.com/in/rosswampler/">Ross Wampler</a></li></ul>
+<ul>
+<li><a href="https://www.linkedin.com/in/rosswampler/">Ross Wampler</a></li>
+<li><a href="https://www.linkedin.com/in/ron-appleton-b3066318/">Ron Appleton</a></li>
+</ul>
 
 <h3>Maintainers</h3>
 
 These amazing people are maintaining this project:
 
-<ul><li><a href="https://www.linkedin.com/in/ron-appleton-b3066318/">Ron Appleton</a></li></ul>
+<ul>
+<li><a href="https://www.linkedin.com/in/ron-appleton-b3066318/">Ron Appleton</a></li>
+<li><a href="https://www.linkedin.com/in/rosswampler/">Ross Wampler</a></li>
+</ul>
 
 <h3>Sponsors</h3>
 
