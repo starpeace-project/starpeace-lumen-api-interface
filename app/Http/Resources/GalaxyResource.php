@@ -12,11 +12,17 @@ class GalaxyResource extends JsonResource
      */
     public function toArray($request)
     {
-        return [
+        $galaxies = [
             'galaxy_id' => $this->id,
             'galaxy_type' => $this->type->name,
             'name' => $this->display_name,
             'updated_at' => $this->updated_at->format('Y-m-d H:m:s'),
         ];
+
+        if (!empty($this->worlds)) {
+            $galaxies['worlds'] = WorldResource::collection($this->worlds);
+        }
+
+        return $galaxies;
     }
 }

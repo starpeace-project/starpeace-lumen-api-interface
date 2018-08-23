@@ -30,6 +30,7 @@ $app->withEloquent();
 $app->configure('auth');
 $app->configure('routes');
 $app->configure('cache');
+$app->configure('redis');
 
 /*
 |--------------------------------------------------------------------------

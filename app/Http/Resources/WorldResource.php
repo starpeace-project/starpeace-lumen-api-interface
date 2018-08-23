@@ -10,14 +10,15 @@ class WorldResource extends JsonResource
     {
         $data = [
             'id' => $this->id,
-            'galaxy_id' => $this->galaxy_id,
             'map_id' => $this->map_id,
-            'name' => $this->name,
             'display_name' => $this->display_name,
+            'year' => $this->year,
+            'investors' => $this->investors_count,
+            'online' => $this->online_count,
         ];
 
         if (!empty($this->updated_at)) {
-            $data['update_at'] = $this->updated_at->format('Y-m-d H:i:s');
+            $data['updated_at'] = $this->updated_at->format('Y-m-d H:i:s');
         }
 
         return $data;

@@ -14,16 +14,17 @@ class GalaxyController extends Controller
     public function getGalaxies()
     {
         return GalaxyResource::collection(
-            Cache::remember('galaxies', 60, function () {
-                return Galaxy::with('type')->get();
-            })
+            Galaxy::with(['type', 'worlds'])->get()
+//            Cache::remember('galaxies', config('redis.cache_lives.galaxies', 60), function () {
+//
+//            })
         );
     }
 
     public function getTypes()
     {
         return GalaxyTypeResource::collection(
-            Cache::remember('galaxy_types', 60, function () {
+            Cache::remember('galaxy_types', config('redis.cache_lives.galaxy_types', 60), function () {
                 return GalaxyType::all();
             })
         );
