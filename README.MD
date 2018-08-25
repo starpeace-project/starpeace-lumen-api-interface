@@ -50,6 +50,283 @@ POST   | /oauth/personal-access-tokens            |            | \Laravel\Passpo
 DELETE | /oauth/personal-access-tokens/{token_id} |            | \Laravel\Passport\Http\Controllers\PersonalAccessTokenController   | destroy    | auth
 
 
+## API CALLS
+
+The purpose of this API is obviously the calls we can make and the data we can obtain.
+Note: All data in the examples below are example data.
+
+### Initial Calls
+
+The following calls are those currently available
+
+### /galaxies/getTypes
+
+        /galaxies/getTypes
+        
+This will return a json list of available galaxy types:
+
+        {
+            "data": [
+                {
+                    "id": 1,
+                    "name": "free",
+                    "display_name": "Free",
+                    "updated_at": "2018-08-22 22:40:50"
+                },
+                {
+                    "id": 2,
+                    "name": "subscriber",
+                    "display_name": "Subscriber",
+                    "updated_at": "2018-08-22 22:40:50"
+                },
+                {
+                    "id": 3,
+                    "name": "private",
+                    "display_name": "Private",
+                    "updated_at": "2018-08-22 22:40:50"
+                },
+                {
+                    "id": 4,
+                    "name": "sponsored",
+                    "display_name": "Sponsored",
+                    "updated_at": "2018-08-22 22:40:50"
+                }
+            ]
+        }
+    
+### /galaxies/getGalaxies    
+        
+        /galaxies/getGalaxies
+        
+This will return a full list of the galaxy types including the worlds within
+
+        {
+            "data": [
+                {
+                    "galaxy_id": 1,
+                    "galaxy_type": "free",
+                    "name": "Milky Way",
+                    "updated_at": "2018-08-22 22:08:50",
+                    "worlds": [
+                        {
+                            "id": 2,
+                            "map_id": 2,
+                            "display_name": "Winfield",
+                            "year": 2000,
+                            "updated_at": "2018-08-22 22:40:50"
+                        },
+                        {
+                            "id": 11,
+                            "map_id": 8,
+                            "display_name": "Samir",
+                            "year": 2000,
+                            "updated_at": "2018-08-22 22:40:50"
+                        },
+                        {
+                            "id": 13,
+                            "map_id": 1,
+                            "display_name": "Dixie",
+                            "year": 2000,
+                            "updated_at": "2018-08-22 22:40:50"
+                        },
+                        {
+                            "id": 15,
+                            "map_id": 4,
+                            "display_name": "Hettie",
+                            "year": 2000,
+                            "updated_at": "2018-08-22 22:40:50"
+                        }
+                    ]
+                },
+                {
+                    "galaxy_id": 2,
+                    "galaxy_type": "subscriber",
+                    "name": "Andromeda",
+                    "updated_at": "2018-08-22 22:08:50",
+                    "worlds": [
+                        {
+                            "id": 7,
+                            "map_id": 9,
+                            "display_name": "Hailee",
+                            "year": 2000,
+                            "updated_at": "2018-08-22 22:40:50"
+                        },
+                        {
+                            "id": 8,
+                            "map_id": 9,
+                            "display_name": "Kellen",
+                            "year": 2000,
+                            "updated_at": "2018-08-22 22:40:50"
+                        }
+                    ]
+                },
+                {
+                    "galaxy_id": 3,
+                    "galaxy_type": "private",
+                    "name": "Black Eye Galaxy",
+                    "updated_at": "2018-08-22 22:08:50",
+                    "worlds": [
+                        {
+                            "id": 1,
+                            "map_id": 1,
+                            "display_name": "Edward",
+                            "year": 2000,
+                            "updated_at": "2018-08-22 22:40:50"
+                        },
+                        {
+                            "id": 6,
+                            "map_id": 8,
+                            "display_name": "Ova",
+                            "year": 2000,
+                            "updated_at": "2018-08-22 22:40:50"
+                        },
+                        {
+                            "id": 14,
+                            "map_id": 2,
+                            "display_name": "Cayla",
+                            "year": 2000,
+                            "updated_at": "2018-08-22 22:40:50"
+                        },
+                        {
+                            "id": 17,
+                            "map_id": 3,
+                            "display_name": "Brycen",
+                            "year": 2000,
+                            "updated_at": "2018-08-22 22:40:50"
+                        },
+                        {
+                            "id": 18,
+                            "map_id": 3,
+                            "display_name": "Burnice",
+                            "year": 2000,
+                            "updated_at": "2018-08-22 22:40:50"
+                        },
+                        {
+                            "id": 19,
+                            "map_id": 5,
+                            "display_name": "Laury",
+                            "year": 2000,
+                            "updated_at": "2018-08-22 22:40:50"
+                        },
+                        {
+                            "id": 20,
+                            "map_id": 10,
+                            "display_name": "Arvilla",
+                            "year": 2000,
+                            "updated_at": "2018-08-22 22:40:50"
+                        }
+                    ]
+                },
+                {
+                    "galaxy_id": 4,
+                    "galaxy_type": "sponsored",
+                    "name": "Virgo Stellar Stream",
+                    "updated_at": "2018-08-22 22:08:50",
+                    "worlds": [
+                        {
+                            "id": 3,
+                            "map_id": 8,
+                            "display_name": "Amelie",
+                            "year": 2000,
+                            "updated_at": "2018-08-22 22:40:50"
+                        },
+                        {
+                            "id": 4,
+                            "map_id": 3,
+                            "display_name": "Lelia",
+                            "year": 2000,
+                            "updated_at": "2018-08-22 22:40:50"
+                        },
+                        {
+                            "id": 5,
+                            "map_id": 10,
+                            "display_name": "Winona",
+                            "year": 2000,
+                            "updated_at": "2018-08-22 22:40:50"
+                        },
+                        {
+                            "id": 9,
+                            "map_id": 8,
+                            "display_name": "Roger",
+                            "year": 2000,
+                            "updated_at": "2018-08-22 22:40:50"
+                        },
+                        {
+                            "id": 10,
+                            "map_id": 10,
+                            "display_name": "Mike",
+                            "year": 2000,
+                            "updated_at": "2018-08-22 22:40:50"
+                        },
+                        {
+                            "id": 12,
+                            "map_id": 4,
+                            "display_name": "Turner",
+                            "year": 2000,
+                            "updated_at": "2018-08-22 22:40:50"
+                        },
+                        {
+                            "id": 16,
+                            "map_id": 3,
+                            "display_name": "Angus",
+                            "year": 2000,
+                            "updated_at": "2018-08-22 22:40:50"
+                        }
+                    ]
+                }
+            ]
+        }
+        
+### /galaxies/getGalaxy/[n]
+
+        /galaxies/getGalaxy/1
+        
+This will return the worlds in the given galaxy [n]
+
+        {
+            "data": [
+                {
+                    "id": 2,
+                    "map_id": 2,
+                    "display_name": "Winfield",
+                    "year": 2000,
+                    "investors": 9,
+                    "online": 0,
+                    "updated_at": "2018-08-22 22:40:50"
+                },
+                {
+                    "id": 11,
+                    "map_id": 8,
+                    "display_name": "Samir",
+                    "year": 2000,
+                    "investors": 8,
+                    "online": 0,
+                    "updated_at": "2018-08-22 22:40:50"
+                },
+                {
+                    "id": 13,
+                    "map_id": 1,
+                    "display_name": "Dixie",
+                    "year": 2000,
+                    "investors": 4,
+                    "online": 0,
+                    "updated_at": "2018-08-22 22:40:50"
+                },
+                {
+                    "id": 15,
+                    "map_id": 4,
+                    "display_name": "Hettie",
+                    "year": 2000,
+                    "investors": 8,
+                    "online": 0,
+                    "updated_at": "2018-08-22 22:40:50"
+                }
+            ]
+        }
+        
+This return includes details of how many tycoons are investors on each world along with how many investors were online within the last ten minutes.
+
+
 <!-- HISTORY/ -->
 
 <h2>History</h2>

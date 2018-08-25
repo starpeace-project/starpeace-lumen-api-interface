@@ -8,6 +8,8 @@ use App\Http\Resources\GalaxyTypeResource;
 use Illuminate\Support\Facades\Cache;
 use Starpeace\Models\Eloquent\Common\Galaxy;
 use Starpeace\Models\Eloquent\Common\GalaxyType;
+use App\Http\Resources\WorldResource;
+use Starpeace\Models\Eloquent\Common\World;
 
 class GalaxyController extends Controller
 {
@@ -19,6 +21,14 @@ class GalaxyController extends Controller
 //
 //            })
         );
+    }
+
+    public function getGalaxy($galaxy_id)
+    {
+        return WorldResource::collection(World::where('galaxy_id', $galaxy_id)
+            ->investorCount()
+            ->onlineCount()
+            ->get());
     }
 
     public function getTypes()
