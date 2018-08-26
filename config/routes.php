@@ -6,5 +6,6 @@ return [
         'map.php',
         'galaxies.php',
         'worlds.php',
+        'tycoons.php',
     ]
 ];

@@ -13,16 +13,6 @@ use Starpeace\Models\Eloquent\Common\World;
 
 class GalaxyController extends Controller
 {
-    public function getGalaxies()
-    {
-        return GalaxyResource::collection(
-            Galaxy::with(['type', 'worlds'])->get()
-//            Cache::remember('galaxies', config('redis.cache_lives.galaxies', 60), function () {
-//
-//            })
-        );
-    }
-
     public function getGalaxy($galaxy_id)
     {
         return WorldResource::collection(World::where('galaxy_id', $galaxy_id)
@@ -31,7 +21,14 @@ class GalaxyController extends Controller
             ->get());
     }
 
-    public function getTypes()
+    public function getGalaxies()
+    {
+        return GalaxyResource::collection(
+            Galaxy::with(['type', 'worlds'])->get()
+        );
+    }
+
+    public function getGalaxyTypes()
     {
         return GalaxyTypeResource::collection(
             Cache::remember('galaxy_types', config('redis.cache_lives.galaxy_types', 60), function () {
