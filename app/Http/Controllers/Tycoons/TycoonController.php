@@ -30,4 +30,14 @@ class TycoonController extends Controller
     {
         return Tycoon::all();
     }
+
+    public function getTycoonMapBuildings($map_id, $tycoon_id)
+    {
+        
+    }
+
+    public function getTycoonMapCompanies()
+    {
+        
+    }
 }

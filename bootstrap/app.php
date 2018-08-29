@@ -31,6 +31,7 @@ $app->configure('auth');
 $app->configure('routes');
 $app->configure('cache');
 $app->configure('redis');
+$app->configure('repository');
 
 /*
 |--------------------------------------------------------------------------
@@ -73,6 +74,7 @@ $app->routeMiddleware([
 $app->register(Laravel\Passport\PassportServiceProvider::class);
 $app->register(Dusterio\LumenPassport\PassportServiceProvider::class);
 $app->register(Illuminate\Redis\RedisServiceProvider::class);
+$app->register(Prettus\Repository\Providers\LumenRepositoryServiceProvider::class);
 
 /*
 |--------------------------------------------------------------------------
